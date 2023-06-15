@@ -1,10 +1,8 @@
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
 
 const HttpException = require("./utils/httpexceptions.utils");
 const errorMiddleware = require("./middleware/error.middleware");
-dotenv.config();
 const app = express();
 
 const mainRoutes = require("./routes/index.route");
@@ -17,11 +15,6 @@ app.options("*", cors());
 
 app.use(mainRoutes);
 
-// app.all('*',(req,res,next)=>{
-//     const err = new HttpException(404,'Endpoint not found.');
-//     console.log(err)
-//     next(err)
-// })
 
 // Handling Uncaught Exception:
 
