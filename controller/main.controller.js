@@ -20,7 +20,7 @@ class MainController {
             price_data: {
               currency: "usd",
               product_data: {
-                name: "Ecommerce",
+                name: "Kharidar",
               },
               unit_amount: amount * 100, // Convert to cents
             },
