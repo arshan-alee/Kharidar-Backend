@@ -1,8 +1,6 @@
-const dotenv = require("dotenv");
 const axios = require("axios");
 const stripe = require("stripe")("sk_test_51NHUo0IXBDZqa5GLMa0CdC07H5SPA5EUK8mRurNvlLUEMVncweDYoizTUrtUG9pnr6jiphx6CwsbzPRSp7bssciN00vRgs4a3i");
 
-dotenv.config();
 
 class MainController {
   stripeCheckout = async (req, res, next) => {
